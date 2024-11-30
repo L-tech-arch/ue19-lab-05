@@ -30,7 +30,10 @@ jobs:
       - name: Scan Docker image for vulnerabilities
         uses: aquasecurity/trivy-action@0.29.0
         with:
-          image: ghcr.io/L-tech-arch/ue19-lab-05:latest
+          image-ref: ghcr.io/l-tech-arch/ue19-lab-05:latest
+          format: table
+          ignore-unfixed: true
+          exit-code: 0
 
       - name: Push Docker image to GitHub Container Registry
         run: |
