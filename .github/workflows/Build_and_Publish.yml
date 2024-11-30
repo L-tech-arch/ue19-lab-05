@@ -25,8 +25,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ghcr.io/L-tech-arch/ue19-lab-05:latest .
+          docker build -t ghcr.io/l-tech-arch/ue19-lab-05:latest .
 
       - name: Push Docker image to GitHub Container Registry
         run: |
-          docker push ghcr.io/L-tech-arch/ue19-lab-05:latest
+          docker push ghcr.io/l-tech-arch/ue19-lab-05:latest
